@@ -4,45 +4,44 @@
 <head> <!--this is the META information for the page-->
 
 <title>a.s.w.</title>
-<style>
+<style type="text/css">
 
-   img {
-        width:100%;
-        border:1px solid black;
-    }
-    
-    
-    body {
-        background-image:url("https://i.ibb.co/hWCFcgf/poster.png");
-        background-repeat: no-repeat;
-        background-position: 50% 0%;
-        background-size:430px 600px;
-    }
-    
-    
-    /*--for the navigation bar*/
-    ul {
-        list-style-type:none;
-        margin:0;
-        padding:0;
-        position: fixed;
-        bottom:8%;
-        left:34%;
-    }
-    
-    li {
-        float:left;
-    }
-    
-    li a {
-        text-decoration:none;
-        padding:8px;
-    }
-    
-    li a:hover {
-        background-color: rgba(0,0,100,.2);
-    }
-    
+.poster {
+	margin:0 auto;
+	position:relative;
+	max-width:500px;
+	text-align:center;
+	border: 2px solid black;
+}
+
+.poster img {
+	height:600px;
+    width:430px;
+}
+
+.menu {
+	position:absolute;
+	left:50%;
+	top:90%;
+	width:relative;
+	margin-left:-255px;
+	text-align:center;
+}
+
+.menu ul {
+	display:inline-block;
+	margin:0;
+}
+
+.menu li {
+	display:inline-block;
+    padding:7px;
+}
+
+.menu li a:hover {
+	background-color:white;
+}
+
 </style>
 
 </head>
@@ -51,11 +50,11 @@
 
 <body> <!--all of the VISIBLE things on the page-->
 
+<div class="poster">
 
+<img src="https://i.ibb.co/hWCFcgf/poster.png" alt="poster" style="width:430px;height:600px">
 
-
-<!--LINKS-->
-
+<div class="menu">
 
 <ul>
 
@@ -96,13 +95,11 @@
     </a></li>
 
 </ul>
-    
-</style>
+
+</div>
+
+</div>
+
 
 </body>
 </html>
-    
-    
-    
-    
-</head>
